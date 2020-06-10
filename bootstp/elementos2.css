@@ -1,0 +1,58 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body {
+    background-color: #b2bec3;
+    font-family: "Open Sans", sans-serif;
+  }
+  ul, ol, li {
+      list-style: none;
+  }
+
+  /*--------------------------------------------------------------*/
+
+.elementExample {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+  }
+  .elementExample_first {
+    background-color: #6c5ce7;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .elementExample_second {
+    background-color: #00b894;
+    position: absolute;
+    left: 50%;
+    /* transform: translateX(-50%) translateY(-50%); pode ser assim ou abaixo */
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  .elementExample_last {
+    background-color: #d63031;
+    position: absolute;
+  }
+  .elementExample-internal {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #00cec9;
+
+    /* 3 fase */
+    position: absolute;
+    /* left: 50px;
+    top: 50px; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }

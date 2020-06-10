@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Colunas do bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+      body{ margin: 0px 5px 0px 5px;}
+      h3{padding-bottom: 20px;}
+      #blue{
+        background-color: #0000ff;
+        height: 120px;
+        margin-bottom: 5px;
+        }
+      #red{
+        background-color: #cc0000;
+        height: 120px;
+        margin-bottom: 5px;
+        }
+      #black{
+        background-color: #000000;
+        min-height: 400px;
+        margin-bottom: 5px;
+        }
+      #yellow{
+        background-color: #ffcc00;
+        min-height: 400px;
+        margin-bottom: 5px;
+        }
+      #green{
+        background-color: #009900;
+        min-height: 95px;
+        }
+
+        @media screen and (max-width: 576px) {
+          #blue{
+            height: 60px;
+          }
+          #red{
+            height: 45px;
+          }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div id="blue" class="col-sm-3 col-xs-12"></div> 
+    <div id="red" class="col-sm-9 col-xs-12"></div> 
+  </div>
+
+  <div class="row">
+    <div id="black" class="col-sm-10 col-xs-12"></div> 
+    <div id="yellow" class="col-sm-2 d-none d-sm-block" ></div> 
+  </div>
+
+  <div class="row">
+    <div id="green" class="col-12"></div> 
+  </div>
+
+</div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

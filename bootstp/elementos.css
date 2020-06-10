@@ -1,0 +1,125 @@
+/* Cross-Browser */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: "Open Sans, san-serif";
+    font-size: 18px;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+/* --------------------------------- */
+
+/*Estudo Float*/
+.padrao{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.primeiro{
+    background-color: red;
+    float: left;
+    /* opacity: 0; */
+}
+
+.segundo{
+    background-color: yellow;
+    float: right;
+}
+
+article{
+    background-color: violet;
+    overflow: hidden;
+}
+
+p{
+    clear: both;
+}
+
+/* --------------------------------- */
+        /* Estudando Display */
+
+    /* Guia de funcionamento codigo */
+        /* DI= display inline */
+        /* DB= display block */
+    /*DIB= display inline block*/
+/* --------------------------------- */
+
+.example {
+    color: #FFF;
+    text-align: justify; /*(DIB)*/ /*O Comando Justify não justifica a ultima linha de um texto.*/
+}
+
+.example::after{ /*Classe adicionada para evitar a gambiarra da ultima linha da lista no html*/
+    content: 'ultima linha';
+    display: inline-block;
+    width: 100%;
+    /* color: black; */
+}
+
+.example-item {
+    width: 25%;
+    /* width: 33.333%; (DB e DI) */
+    height: 150px;
+    /* display: inline; Tem comportamento de palavra em relação a espaçamento e não aceita definição de width e heith */
+    /* display: block; Ocupa toda a linha não permitindo que nenhum elemento seja colocado ao lado do do primeiro. */
+    display: inline-block; /*(DIB)*/
+}
+
+/* .last-line{ ultima linha da lista para justificar a linha anterior
+    display: inline-block;
+    width: 100%;
+} A classe last-line é para assumir as mesmas propriedades da classe exemple-item ja que a finalidade é dar efeitos a ultima linha da lista no doc elementos2.html na linha 17. */
+
+.example-item_first {
+    background-color: #FAA116;
+}
+.example-item_second {
+    background-color: #57C7C3;
+    /* margin-left: 66.667%;*/ /*DB*/
+    /* margin-left: auto; (DB) E tambem deve ter uma largura definida se for trabalhar com uma margem para espaçamento. */
+}   
+.example-item_third {
+    background-color: #3B97D3;
+    /* margin-left: auto; (DB)*/
+    /* margin-right: auto; (DB) */
+}
+
+
+/*POSITION RELATIVE*/
+
+.elementExample {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+  }
+  .elementExample_first {
+    background-color: #8E44AD;
+    position: relative;
+    top: 200px;
+    /* z-index: 2; */
+  }
+  .elementExample_last {
+    background-color: #C0392B;
+    position: relative;
+    /* z-index: 1; */
+  }
+
+  .elementExample_isActive{
+    z-index: 1;
+  }
+  
